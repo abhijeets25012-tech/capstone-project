@@ -1,0 +1,10 @@
+.add-first{
+    color:aliceblue;
+    font-size:0.8rem;
+}
+.add-second{
+    font-size:1rem;
+}
+.border:hover{
+    border: 1.5px solid white;
+}

@@ -1,0 +1,33 @@
+  <div class="modal-overlay" id="loginModal">
+    <div class="auth-container">
+      <button class="close-btn" onclick="closeLogin()">×</button>
+      <h1>Login</h1>
+      <form onsubmit="return handleLogin(event)">
+        <input type="text" id="loginName" placeholder="Enter your name" required>
+        <input type="email" id="loginEmail" placeholder="Enter your email" required>
+        <button type="submit" class="btn">Log In</button>
+      </form>
+      <div class="footer-text">
+        Don't have an account? <a onclick="switchToSignup()">Sign Up</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Signup Modal -->
+  <div class="modal-overlay" id="signupModal">
+    <div class="auth-container">
+      <button class="close-btn" onclick="closeSignup()">×</button>
+      <h1>Create Account</h1>
+      <form onsubmit="return handleSignup(event)">
+        <input type="text" id="signupName" placeholder="Enter your name" required>
+        <input type="email" id="signupEmail" placeholder="Enter your email" required>
+        <input type="password" id="signupPassword" placeholder="Enter your password" required>
+        <button type="submit" class="btn">Sign Up</button>
+      </form>
+      <div class="footer-text">
+        Already have an account? <a onclick="switchToLogin()">Log In</a>
+      </div>
+    </div>
+  </div>
+
+
